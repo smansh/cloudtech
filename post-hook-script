@@ -20,21 +20,6 @@ git clone https://github.com/smansh/cloudtech.git
 
 select poll scm like --h/15 * * * * or --* * * * *
 
-	
-
-
-
-
-#!/bin/sh
-#
-
-#curl –user admin1:91367cf0389eaf89669f74c9963c9fb3 http://54.171.140.1:8080/job/ANT-BUILD/build?token=iFBDOBhNhaxL4T9ass93HRXun2JF161Z
-
-curl --user manoj:dac397da5ead6737f1888072a669b2f8 http://192.168.1.141:8085/job/Auto-hookstrigeer/build?token=dac397da5ead6737f1888072a669b2f8
-
-
-echo "jenkins build from external script"
-
 ~
 ~
 
