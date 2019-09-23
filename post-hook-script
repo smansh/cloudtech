@@ -1,0 +1,40 @@
+step to Triggering Jenkins jobs remotely via script git post-commit hooksp1-
+step1-login jenkins with username/password
+step2-click username-configuer
+click show api token then copy username and token id like
+
+username -manoj
+token id-dac397da5ead6737f1888072a669b2f8
+step-3
+create sample free style like name----sample-triggering-post-script
+step4-
+in source code management click git url like
+https://github.com/smansh/cloudtech.git
+
+step5-in Build Triggers option (from script) pest 
+Authentication token like -dac397da5ead6737f1888072a669b2f8
+
+and select -Build when a change is pushed to GitBucket
+cd /home/
+git clone https://github.com/smansh/cloudtech.git
+
+select poll scm like --h/15 * * * * or --* * * * *
+
+	
+
+
+
+
+#!/bin/sh
+#
+
+#curl –user admin1:91367cf0389eaf89669f74c9963c9fb3 http://54.171.140.1:8080/job/ANT-BUILD/build?token=iFBDOBhNhaxL4T9ass93HRXun2JF161Z
+
+curl --user manoj:dac397da5ead6737f1888072a669b2f8 http://192.168.1.141:8085/job/Auto-hookstrigeer/build?token=dac397da5ead6737f1888072a669b2f8
+
+
+echo "jenkins build from external script"
+
+~
+~
+
